@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-      <form action="">
+      <form action="http://localhost:3003/profile/edit" method="POST">
         <h1>Form cloudinary</h1>
         <label htmlFor="">Nombre del archivo</label>
         <input type="text" />
