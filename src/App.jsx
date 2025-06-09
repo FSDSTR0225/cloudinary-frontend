@@ -10,7 +10,12 @@ function App() {
     try {
       const response = await fetch('http://localhost:3003/profile/edit', {
         method: 'POST',
-        body: formData
+        headers: {
+        'Content-Type': 'application/json',
+      },
+        body: JSON.stringify({
+          "test": "testbody",
+        })
       })
       const result = await response.json()
       console.log(result)
